@@ -6,7 +6,7 @@ services:
       context: ./jwc
     container_name: javawebcalculator
     ports:
-      - "8080:8080"
+      - "8082:8080"
     networks:
       - combined-net
 
@@ -15,7 +15,7 @@ services:
       context: ./vpr
     container_name: vprofile
     ports:
-      - "8081:8080"  # Assuming vprofile exposes 8080 internally
+      - "9002:8080"  # Assuming vprofile exposes 8080 internally
     networks:
       - combined-net
 
