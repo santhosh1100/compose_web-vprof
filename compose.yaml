@@ -15,7 +15,7 @@ services:
       context: ./vpr
     container_name: vprofile
     ports:
-      - "9002:8080"  # Assuming vprofile exposes 8080 internally
+      - "8083:8080"  # Assuming vprofile exposes 8080 internally
     networks:
       - combined-net
 
