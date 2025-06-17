@@ -1,8 +1,7 @@
-
 version: '3.8'
 
 services:
-  javawebcalculator:
+  jwc:
     build:
       context: ./JavaWebCalculator
     container_name: javawebcalculator
@@ -11,7 +10,7 @@ services:
     networks:
       - combined-net
 
-  vprofile:
+  vpr:
     build:
       context: ./vprofile-project
     container_name: vprofile
